@@ -1,0 +1,47 @@
+.image-container1 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; /* Adjust the width of the square */
+    height: 240px; /* Adjust the height of the square */
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity */
+    border: 2px solid #fff; /* Optional: Add a border to the square */
+  }
+
+  img1 {
+    width: 100%;
+    height: auto;
+  }
+  .rounded-button {
+    margin-left: 300px;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 25px; /* Adjust border-radius for rounded corners */
+    background-color: #FB2576; /* Pink color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size as needed */
+    border: none;
+    outline: none;
+  }
+  .text-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px; /* Add margin as needed */
+  }
+
+  .text-content {
+    max-width: 60%; /* Adjust the width of the text content */
+  }
+
+  .button-container {
+    margin-left: 20px; /* Adjust the margin between text and button */
+  }

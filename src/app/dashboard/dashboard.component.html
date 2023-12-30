@@ -1,0 +1,31 @@
+<div class="container mt-5">
+	<table class="table table-striped">
+	  <thead>
+		<tr>
+		  <th scope="col">ID Course</th>
+		  <th scope="col">Title</th>
+		  <th scope="col">Price</th>
+		  <th scope="col">Edit</th>
+		  <th scope="col">Delete</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr *ngFor="let course of Courses">
+		  <td>{{ course.idCourse | number }}</td>
+		  <td>{{ course.title }}</td>
+		  <td>${{ course.price | number }}</td>
+		  <td>
+			<a class="btn btn-primary" data-toggle="modal" [routerLink]="['/updateCourse', course.idCourse]">
+			  <i class="bi bi-pencil"></i> Edit
+			</a>
+		  </td>
+		  <td>
+			<button type="button" class="btn btn-danger" (click)="confirmDelete(course.idCourse)">
+			  <i class="bi bi-trash"></i> Delete
+			</button>
+		  </td>
+		</tr>
+	  </tbody>
+	</table>
+  </div>
+  
